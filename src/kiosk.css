@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "primal";
+  src: url("fonts/primal.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "proxima nova bold";
+  src: url("fonts/proxima-nova-bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "proxima nova semibold";
+  src: url("fonts/proxima-nova-semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "proxima nova regular";
+  src: url("fonts/proxima-nova-regular.otf") format("opentype");
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 2em;
+  background-image: url(bg/bg-page.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+#veil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(200,200,200,0.6);
+  z-index: 1;
+}
+
+#splash {
+  position: fixed;
+  top: 0;
+  right: 240px;
+  bottom: 240px;
+  left: 0;
+  transition-property: opacity;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+//  background-image: url(bg/bg-splash-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "primal";
+  font-weight: normal;
+  font-size: 120px;
+  margin: 0;
+}
+
+kiosk-splash h1 {
+  position: absolute;
+  top: 600px;
+  left: 150px;
+}
+
+h1 sup {
+  font-size: 0.45em;
+}
+
+kiosk-splash p {
+  font-family: "proxima nova semibold";
+  font-size: 70px;
+  width: 1950px;
+  position: absolute;
+  top: 725px;
+  left: 150px;
+}
+
+#description-27 {
+  width: 1975px;
+}
+
+#splash-top-27 {
+  position: absolute;
+  bottom: 50px;
+  left: 2000px;
+  width: 2000px;
+}
+
+#splash-top-49 {
+  position: absolute;
+  top: 0;
+  right: -240px;
+}
+
+#splash-left {
+  position: absolute;
+  top: 50px;
+  right: 800px;
+}
+
+.splash-right {
+  position: absolute;
+  top: 70px;
+  right: 125px;
+}
+
+#splash-shill {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  height: 1650px;
+}
+
+#roadmap,
+#roadmap-details,
+#merch,
+#tech,
+#tech-49,
+#tech-27 {
+  position: fixed;
+  top: 0;
+  right: 240px;
+  bottom: 0;
+  left: 0;
+  transition-property: opacity;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+  background-image: url(bg/bg-splash-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#merch kiosk-tabs {
+  --active-tab-color: white;
+}
+
+#merch li {
+  padding: 25px 0;
+}
+
+#roadmap-intro h1,
+kiosk-tabs h1 {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  text-align: center;
+}
+
+#roadmap-intro h1 img {
+  height: 145px;
+  margin-left: 40px;
+}
+
+kiosk-roadmap {
+}
+
+#roadmap-tip {
+  position: absolute;
+  top: 1600px;
+  width: 100%;
+  text-align: center;
+  font-family: "proxima nova semibold";
+  font-size: 100px;
+  color: #666;
+}
+
+#tech roadmap-split-left h3,
+#tech roadmap-split-right h3 {
+  margin-top: 0.5em;
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 75px;
+}
+
+kiosk-sidebar {
+  font-family: "proxima nova bold";
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none!important;
+}
+
+.hidden * {
+  pointer-events: none!important;
+}
+
+#gutter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 240px;
+  height: 240px;
+  background: #444;
+  box-shadow: inset 0 20px 30px -20px rgba(0,0,0,0.5);
+}

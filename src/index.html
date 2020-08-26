@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.1"">
+    <!--meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"-->
+    <!--meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"-->
+    <title> Dimension 49J Kiosk </title>
+    <link rel="stylesheet" href="kiosk.css">
+    <script type="module" src="lib/kiosk-begin.js"></script>
+    <script type="module" src="lib/kiosk-cta.js"></script>
+    <script type="module" src="lib/kiosk-splash.js"></script>
+    <script type="module" src="lib/kiosk-tabs.js"></script>
+    <script type="module" src="lib/kiosk-roadmap.js"></script>
+    <script type="module" src="lib/kiosk-slider.js"></script>
+    <script type="module" src="lib/kiosk-sidebar.js"></script>
+    <script type="module" src="lib/kiosk-merch.js"></script>
+    <script type="module" src="lib/kiosk-tech.js"></script>
+    <script type="module" src="lib/zoom-hint.js"></script>
+    <link rel="preload" href="bg/bg-page.png" as="image">
+    <link rel="preload" href="bg/bg-splash-1.png" as="image">
+    <link rel="preload" href="sprites/brushed-sidebar.png" as="image">
+    <link rel="preload" href="sprites/icon-touch-white.png" as="image">
+    <link rel="preload" href="sprites/brushed-circle.png" as="image">
+    <link rel="preload" href="sprites/icon-home.png" as="image">
+    <link rel="preload" href="sprites/icon-roadmap.png" as="image">
+    <link rel="preload" href="sprites/icon-merch.png" as="image">
+    <link rel="preload" href="sprites/icon-technical.png" as="image">
+    <link rel="preload" href="sprites/icon-arrows.png" as="image">
+    <link rel="preload" href="sprites/top.png" as="image">
+  </head>
+  <body>
+    <!--video id="bg" autoplay loop muted>
+      <source src="bg.webm" type="video/webm">
+    </video>
+    <div id="veil"></div-->
+    <div id="gutter" style="z-index:-2;"></div>
+    <kiosk-sidebar></kiosk-sidebar>
+    <div id="splash">
+      <kiosk-splash>
+        <section>
+          <h1> <img src="sprites/logo-main-27.png"> </h1>
+          <p id="description-27"> <br>
+            This DIMENSION 49J™ sibling is stacked in every way. <br>
+            Two stacked 27” monitors, stacked with fantastic <br>
+            features to show off stacks of player-pleasing content.
+          </p>
+          <img id="splash-top-27" src="sprites/cabinet-deck-27.png">
+        </section>
+        <section>
+          <h1> GAmes GO FOrwArd </h1>
+          <p> Eye-catching isn't it? A new cabinet deserves incredible <br>
+            content: An Australian market favorite All Aboard™ and <br>
+            the first-of-its-kind Silent Hill® slot series.
+          </p>
+          <img id="splash-shill" src="sprites/silenthill-6-bank.png">
+        </section>
+        <section>
+          <h1> WHAT'S NeW? </h1>
+          <p> This stacked beauty is where you’ll see original titles first, <br>
+            like new China Shores linked progressives and hits <br>
+            inspired by 5 Elemental Legends. <br> <br>
+            <img src="sprites/logo-main-27.png">
+          </p>
+          <img class="splash-right" src="sprites/splash-doublecabinet-27.png">
+        </section>
+        <section>
+          <h1> <img src="sprites/logo-main-49.png"> </h1>
+          <p> <br>
+            Our new cabinet is the launchpad for gorgeous graphics <br>
+            and immersive sound, presenting a UHD showcase of <br>
+            brilliant proportions.
+          </p>
+          <img class="splash-right" src="sprites/splash-doublecabinet-49.png">
+        </section>
+        <section>
+          <h1> MULTIPLe CHOICe </h1>
+          <p>
+            SeleXion® multi-game packs gather KP3+ and K2V <br>
+            games in one amazing place, giving you <br>
+            exponential options with a brand-new face.
+            <br> <br>
+            <img src="sprites/logo-main-27.png">
+          </p>
+          <img class="splash-right" src="sprites/splash-multiple.png">
+        </section>
+        <section>
+          <h1> WelcOme TO The Future </h1>
+          <p> Press on to our newest and greatest experiences—and get <br>
+            a feel for the future of play.
+          </p>
+          <img id="splash-top-49" src="sprites/top.png">
+        </section>
+      </kiosk-splash>
+      <kiosk-begin></kiosk-begin>
+      <kiosk-cta></kiosk-cta>
+    </div>
+    <div id="roadmap" class="hidden">
+      <kiosk-roadmap></kiosk-roadmap>
+    </div>
+    <div id="merch" class="hidden">
+      <kiosk-tabs>
+        <section id="merch-allaboard" data-title="sprites/logo-allaboard.png">
+          <kiosk-slider>
+            <section>
+              <kiosk-merch>
+                <h1 slot="title"> BANK OF 6 </h1>
+                <img slot="zoomable" src="sprites/allaboard-6-bank.png">
+                <ul slot="bullets-left">
+                  <li> Premium LED fillers </li>
+                  <li> Exclusive filler base design </li>
+                </ul>
+                <ul slot="bullets-right">
+                  <li> Synchronized content for a theatrical experience </li>
+                  <li> 4 x 2 in line available </li>
+                </ul>
+              </kiosk-merch>
+            </section>
+            <section>
+              <kiosk-merch>
+                <h1 slot="title"> BANK OF 4 </h1>
+                <img slot="zoomable" src="sprites/allaboard-4-bank.png">
+                <ul slot="bullets-left">
+                  <li> Premium LED fillers </li>
+                  <li> Exclusive filler base design </li>
+                </ul>
+                <ul slot="bullets-right">
+                  <li> Synchronized content for a theatrical experience </li>
+                  <li> 4 x 2 in line available </li>
+                </ul>
+              </kiosk-merch>
+            </section>
+            <section>
+              <kiosk-merch>
+                <h1 slot="title"> 4-POD </h1>
+                <img slot="zoomable" src="sprites/allaboard-4-pod.png">
+                <ul slot="bullets-left">
+                  <li> Premium LED fillers </li>
+                  <li> Exclusive filler base design </li>
+                </ul>
+                <ul slot="bullets-right">
+                  <li> Synchronized content for a theatrical experience </li>
+                </ul>
+              </kiosk-merch>
+            </section>
+            <section>
+              <kiosk-merch>
+                <h1 slot="title"> WALL BANK OF 4 </h1>
+                <img slot="zoomable" src="sprites/allaboard-4-line.png">
+                <ul slot="bullets-left">
+                  <li> Premium LED fillers </li>
+                  <li> Exclusive filler base design </li>
+                </ul>
+                <ul slot="bullets-right">
+                  <li> Synchronized content for a theatrical experience </li>
+                  <li> 8 x 1 in line available </li>
+                </ul>
+              </kiosk-merch>
+            </section>
+          </kiosk-slider>
+        </section>
+        <section id="merch-silenthill" data-title="sprites/logo-silenthill.png">
+          <kiosk-slider>
+            <section>
+              <kiosk-merch>
+                <h1 slot="title"> BANK OF 6 </h1>
+                <img slot="zoomable" src="sprites/silenthill-6-bank.png">
+                <ul slot="bullets-left">
+                  <li> Premium LED fillers </li>
+                  <li> Exclusive filler base design </li>
+                </ul>
+                <ul slot="bullets-right">
+                  <li> Synchronized content for a theatrical experience </li>
+                  <li> 4 x 2 in line available </li>
+                </ul>
+              </kiosk-merch>
+            </section>
+            <section>
+              <kiosk-merch>
+                <h1 slot="title"> BANK OF 4 </h1>
+                <img slot="zoomable" src="sprites/silenthill-4-bank.png">
+                <ul slot="bullets-left">
+                  <li> Premium LED fillers </li>
+                  <li> Exclusive filler base design </li>
+                </ul>
+                <ul slot="bullets-right">
+                  <li> Synchronized content for a theatrical experience </li>
+                  <li> 4 x 2 in line available </li>
+                </ul>
+              </kiosk-merch>
+            </section>
+            <section>
+              <kiosk-merch>
+                <h1 slot="title"> 4-POD </h1>
+                <img slot="zoomable" src="sprites/silenthill-4-pod.png">
+                <ul slot="bullets-left">
+                  <li> Premium LED fillers </li>
+                  <li> Exclusive filler base design </li>
+                </ul>
+                <ul slot="bullets-right">
+                  <li> Synchronized content for a theatrical experience </li>
+                </ul>
+              </kiosk-merch>
+            </section>
+            <section>
+              <kiosk-merch>
+                <h1 slot="title"> WALL BANK OF 4 </h1>
+                <img slot="zoomable" src="sprites/allaboard-4-line.png">
+                <ul slot="bullets-left">
+                  <li> Premium LED fillers </li>
+                  <li> Exclusive filler base design </li>
+                </ul>
+                <ul slot="bullets-right">
+                  <li> Synchronized content for a theatrical experience </li>
+                  <li> 8 x 1 in line available </li>
+                </ul>
+              </kiosk-merch>
+            </section>
+          </kiosk-slider>
+        </section>
+      </kiosk-tabs>
+      <zoom-hint></zoom-hint>
+    </div>
+    <div id="tech" class="hidden">
+      <kiosk-tabs>
+        <section data-title="TeCHNICAL SPeCS">
+          <roadmap-split>
+            <roadmap-split-left>
+              <h3>
+                Single Cabinet <br>
+                Bank of 6 | Bank of 4 <br>
+                4-Pod | Wall Bank
+              </h3>
+            </roadmap-split-left>
+            <roadmap-split-right>
+              <h3>
+                Single Cabinet <br>
+                Cabinet With Topper
+              </h3>
+            </roadmap-split-right>        
+          </roadmap-split>
+        </section>
+      </kiosk-tabs>
+    </div>
+    <div id="tech-49" class="hidden">
+      <kiosk-tabs>
+        <section id="tech-single" data-title="SINGLe">
+          <kiosk-tech data-specs='{
+              "height-topper" : "103.40in",
+              "height" : "97.23in",
+              "height-base" : "13.00in",
+              "height-deck" : "31.25in",
+              "width" : "27.00in",
+              "depth-deck" : "28.00in",
+              "depth-base" : "25.00in",
+              "pwr-cabinet" : "x.xxA",
+              "pwr-top" : "x.xxA",
+              "pwr-caps" : "x.xxA",
+              "pwr-filler" : "x.xxA"
+            }'>
+            <!--h1 slot="title"> SINGLe CABINeT </h1-->
+            <h1 slot="title"> <img src="sprites/logo-main-49.png"> </h1>
+            <img slot="schematic" src="sprites/specs-1.png">
+          </kiosk-tech>
+        </section>
+        <section id="tech-bank6" data-title="BANK OF 6">
+          <kiosk-tech data-specs='{
+              "height-topper" : "122.00in",
+              "height" : "97.00in",
+              "height-base" : "13.00in",
+              "height-deck" : "31.25in",
+              "width" : "131.00in",
+              "depth-deck" : "60.00in",
+              "depth-base" : "54.00in",
+              "pwr-cabinet" : "(6 x 2.10A ea) 12.60A",
+              "pwr-top" : "10.25A",
+              "pwr-caps" : "(2 x 3.58A ea) 7.16A",
+              "pwr-filler" : "(4 x 1.91A ea) 7.64A"
+            }'>
+            <!--h1 slot="title"> BANK OF 6 </h1-->
+            <h1 slot="title"> <img src="sprites/logo-main-49.png"> </h1>
+            <img slot="schematic" src="sprites/specs-6-bank.png">
+          </kiosk-tech>
+        </section>        
+        <section id="tech-bank4" data-title="BANK OF 4">
+          <kiosk-tech data-specs='{
+              "height-topper" : "122.00in",
+              "height" : "96.00in",
+              "height-base" : "13.00in",
+              "height-deck" : "31.25in",
+              "width" : "99.21in",
+              "depth-deck" : "60.00in",
+              "depth-base" : "54.00in",
+              "pwr-cabinet" : "x.xxA",
+              "pwr-top" : "x.xxA",
+              "pwr-caps" : "x.xxA",
+              "pwr-filler" : "x.xxA"
+            }'>
+            <!--h1 slot="title"> BANK OF 4 </h1-->
+            <h1 slot="title"> <img src="sprites/logo-main-49.png"> </h1>
+            <img slot="schematic" src="sprites/specs-4-bank.png">
+          </kiosk-tech>
+        </section>
+        <section id="tech-4pod" data-title="4-POD">
+          <kiosk-tech data-specs='{
+              "height-topper" : "120.66in",
+              "height" : "96.00in",
+              "height-base" : "13.00in",
+              "height-deck" : "31.25in",
+              "width" : "71.06in",
+              "depth-deck" : "N/A",
+              "depth-base" : "N/A",
+              "pwr-cabinet" : "x.xxA",
+              "pwr-top" : "x.xxA",
+              "pwr-caps" : "x.xxA",
+              "pwr-filler" : "x.xxA"
+            }'>
+            <!--h1 slot="title"> 4-POD </h1-->
+            <h1 slot="title"> <img src="sprites/logo-main-49.png"> </h1>
+            <img slot="schematic" src="sprites/specs-4-pod.png">
+          </kiosk-tech>
+        </section>
+        <section id="tech-4line" data-title="WALL BANK">
+          <kiosk-tech data-specs='{
+              "height-topper" : "122.00in",
+              "height" : "96.00in",
+              "height-base" : "13.00in",
+              "height-deck" : "31.25in",
+              "width" : "151.00in",
+              "depth-deck" : "30.00in",
+              "depth-base" : "27.00in",
+              "pwr-cabinet" : "x.xxA",
+              "pwr-top" : "x.xxA",
+              "pwr-caps" : "x.xxA",
+              "pwr-filler" : "x.xxA"
+            }'>
+            <!--h1 slot="title"> WALL BANK OF 4 </h1-->
+            <h1 slot="title"> <img src="sprites/logo-main-49.png"> </h1>
+            <img slot="schematic" src="sprites/specs-4-line.png">
+          </kiosk-tech>
+        </section>
+      </kiosk-tabs>
+    </div>
+    <div id="tech-27" class="hidden">
+      <kiosk-tabs>
+        <section data-title="SINGLe CABINeT">
+          <kiosk-tech data-specs='{
+              "height" : "66.82in",
+              "height-base" : "13.00in",
+              "height-deck" : "31.25in",
+              "width" : "27.00in",
+              "depth-deck" : "28.00in",
+              "depth-base" : "25.00in",
+              "pwr-cabinet" : "x.xxA",
+              "pwr-top" : "x.xxA",
+              "pwr-caps" : "x.xxA",
+              "pwr-filler" : "x.xxA"
+            }'>
+            <h1 slot="title"> <img src="sprites/logo-main-27.png"> </h1>
+            <img slot="schematic" src="sprites/specs-27.png">
+          </kiosk-tech>
+        </section>
+        <section data-title="CABINeT WITH TOPPeR">
+          <kiosk-tech data-specs='{
+              "height" : "XX.XXin",
+              "height-base" : "13.00in",
+              "height-deck" : "31.25in",
+              "width" : "27.00in",
+              "depth-deck" : "28.00in",
+              "depth-base" : "25.00in",
+              "pwr-cabinet" : "x.xxA",
+              "pwr-top" : "x.xxA",
+              "pwr-caps" : "x.xxA",
+              "pwr-filler" : "x.xxA"
+            }'>
+            <h1 slot="title"> <img src="sprites/logo-main-27.png"> </h1>
+            <img slot="schematic" src="sprites/specs-27-topper.png">
+          </kiosk-tech>
+        </section>
+      </kiosk-tabs>
+    </div>
+    <script type="module">
+      let t = document.querySelector('#tech');
+      let l = t.querySelector('roadmap-split-left');
+      let r = t.querySelector('roadmap-split-right');
+
+      let t49 = document.querySelector('#tech-49');
+      let t27 = document.querySelector('#tech-27');
+      
+      let sidebar = document.querySelector('kiosk-sidebar');
+      
+      function hideTechTop(callback) {
+        l.hide();
+        r.hide();
+        t.classList.add('hidden');
+        let d = parseFloat(getComputedStyle(t).getPropertyValue('transition-duration')) * 1000;
+        setTimeout(callback, d);
+      }
+      
+      l.addEventListener('click', event => {
+        hideTechTop(function(){
+          sidebar.showBack();
+          t49.classList.remove('hidden');
+        });
+      });
+      
+      r.addEventListener('click', event => {
+        hideTechTop(function(){ 
+          sidebar.showBack();
+          t27.classList.remove('hidden');
+        });
+      });
+    </script>    
+
+    <script type="module">
+      let splashes = document.querySelectorAll('kiosk-splash > section');
+      let sidebar = document.querySelector('kiosk-sidebar');
+      let rm = document.getElementById('roadmap');
+      let r = document.querySelector('kiosk-roadmap');
+      
+      function showRoadmap(system) {
+        sidebar.hideAll();
+        rm.classList.remove('hidden');
+        r.showOverview(system);
+        sidebar.buttons.roadmap.classList.add('active');
+      }
+      
+      splashes[0].addEventListener('click', event => { showRoadmap('D27'); });
+      splashes[1].addEventListener('click', event => { showRoadmap('D49J'); });
+      splashes[2].addEventListener('click', event => { showRoadmap('D27'); });
+      splashes[3].addEventListener('click', event => { showRoadmap('D49J'); });
+      splashes[4].addEventListener('click', event => { showRoadmap('D27'); });
+      splashes[5].addEventListener('click', event => { showRoadmap('D49J'); });
+    </script>
+  </body>
+</html>

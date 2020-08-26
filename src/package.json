@@ -1,0 +1,16 @@
+{
+  "name": "dimension-kiosk",
+  "version": "2.0.0",
+  "description": "ElectronJS based kiosk application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . dimension-kiosk --overwrite --asar --platform=win32 --arch=x64 --prune=true --out=../build/"
+  },
+  "repository": "https://bitbucket.com/besworks/konami-kiosk",
+  "author": "Besworks",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^7.1.10"
+  }
+}
